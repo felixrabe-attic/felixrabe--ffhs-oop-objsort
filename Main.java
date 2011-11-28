@@ -7,21 +7,21 @@
  * @version 20111128
  */
 public class Main {
+    /** Main program. */
     public static void main(String[] args) {
         Student[] students = StudentExampleData.build();
-        Student s = students[0];
-        dumpStudent(s);
+        for (Student s: students) {
+            printStudent(s);
+        }
     }
     
-    private static void dumpStudent(Student s) {
-        p("First:  " + s.getFirstName());
-        p("Last:   " + s.getLastName());
-        p("Number: " + s.getNumber());
-        p("Age:    " + s.getAge());
-        p("GPA:    " + s.getGradePointAverage());
-    }
-    
-    private static void p(String s) {
-        System.out.println(s);
+    /** Print the information of a student to the console. */
+    private static void printStudent(Student s) {
+        System.out.println("First:  " + s.getFirstName());
+        System.out.println("Last:   " + s.getLastName());
+        System.out.println("Number: " + s.getNumber());
+        System.out.println("Age:    " + s.getAge());
+        System.out.println("GPA:    " + s.getGradePointAverage());
+        System.out.println();
     }
 }
