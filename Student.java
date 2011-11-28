@@ -44,8 +44,9 @@ public class Student {
     public static class Builder {
         private final Student student;
         
-        public Builder() {
+        public Builder(String number) {
             student = new Student();
+            student.setNumber(number);
         }
         
         public Builder first(String first) {
@@ -55,11 +56,6 @@ public class Student {
         
         public Builder last(String last) {
             student.setLastName(last);
-            return this;
-        }
-        
-        public Builder number(String number) {
-            student.setNumber(number);
             return this;
         }
         

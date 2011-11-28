@@ -10,7 +10,7 @@ public class StudentExampleData {
     /** Create example data. */
     public static Student[] build() {
         return new Student[] {
-            new Student.Builder().number("4")
+            new Student.Builder("4")
                 .first("Archimedes").last("Syrakus").age(2296).gpa(6.0).build()
         };
     }
