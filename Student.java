@@ -32,11 +32,9 @@ public class Student {
     
     /** Return a #{java.lang.String} representation of this student. */
     public String toString() {
-        return  "First:  " + getFirstName() + "\n" +
-                "Last:   " + getLastName() + "\n" +
-                "Number: " + getNumber() + "\n" +
-                "Age:    " + getAge() + "\n" +
-                "GPA:    " + getGradePointAverage() + "\n";
+        return "Student #" + getNumber() + ": " +
+            getFirstName() + " " + getLastName() + " " +
+            "(" + getAge() + ") GPA: " + getGradePointAverage();
     }
     
     /** Hidden constructor. Instead use the {@link Student.Builder} class below. */
