@@ -10,22 +10,22 @@ public class Student {
     private int age;
     private double gradePointAverage;
     
-    /* Getters & Setters for the above: */
+    /* Getters & Setters for the above (setters are only called by the Builder): */
     
     public String getFirstName() { return firstName; }
-    public void setFirstName(String firstName) { this.firstName = firstName; }
+    private void setFirstName(String firstName) { this.firstName = firstName; }
     
     public String getLastName() { return lastName; }
-    public void setLastName(String lastName) { this.lastName = lastName; }
+    private void setLastName(String lastName) { this.lastName = lastName; }
     
     public int getNumber() { return number; }
-    public void setNumber(int number) { this.number = number; }
+    private void setNumber(int number) { this.number = number; }
     
     public int getAge() { return age; }
-    public void setAge(int age) { this.age = age; }
+    private void setAge(int age) { this.age = age; }
     
     public double getGradePointAverage() { return gradePointAverage; }
-    public void setGradePointAverage(double gradePointAverage) {
+    private void setGradePointAverage(double gradePointAverage) {
         this.gradePointAverage = gradePointAverage;
     }
     
