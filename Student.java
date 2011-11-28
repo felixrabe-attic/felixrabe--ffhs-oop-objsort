@@ -11,6 +11,9 @@ public class Student {
     private int age;
     private double gradePointAverage;
     
+    /** Hidden constructor. Instead use the {@link Student.Builder} class below. */
+    private Student() { }
+    
     /* Getters & Setters for the above (setters are only called by the Builder): */
     
     public int getNumber() { return number; }
@@ -36,9 +39,6 @@ public class Student {
             getFirstName() + " " + getLastName() + " " +
             "(" + getAge() + ") GPA: " + getGradePointAverage();
     }
-    
-    /** Hidden constructor. Instead use the {@link Student.Builder} class below. */
-    private Student() { }
     
     /** Builder to be used to construct {@link Student} objects.
      *
