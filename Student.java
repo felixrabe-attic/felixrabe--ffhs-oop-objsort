@@ -5,22 +5,22 @@
  */
 public class Student {
     /* Data fields of the student: */
+    private int number;
     private String firstName;
     private String lastName;
-    private int number;
     private int age;
     private double gradePointAverage;
     
     /* Getters & Setters for the above (setters are only called by the Builder): */
+    
+    public int getNumber() { return number; }
+    private void setNumber(int number) { this.number = number; }
     
     public String getFirstName() { return firstName; }
     private void setFirstName(String firstName) { this.firstName = firstName; }
     
     public String getLastName() { return lastName; }
     private void setLastName(String lastName) { this.lastName = lastName; }
-    
-    public int getNumber() { return number; }
-    private void setNumber(int number) { this.number = number; }
     
     public int getAge() { return age; }
     private void setAge(int age) { this.age = age; }
