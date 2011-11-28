@@ -1,6 +1,7 @@
 /** A student in university.
+ *
  * @author Felix Rabe
- * @version 20111128
+ * @version 20111129
  */
 public class Student {
     /* Data fields of the student: */

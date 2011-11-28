@@ -1,7 +1,7 @@
 /** This class constructs example data using the {@link #build} method.
  *
  * @author Felix Rabe
- * @version 20111128
+ * @version 20111129
  */
 public class StudentExampleData {
     /** No use for instantiation. */

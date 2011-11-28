@@ -4,7 +4,7 @@
  * {@link StudentExampleData#build}.
  *
  * @author Felix Rabe
- * @version 20111128
+ * @version 20111129
  */
 public class Main {
     /** Main program. */

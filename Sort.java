@@ -1,5 +1,8 @@
 /** Interface for classes that sort an array of objects using a
- *  @{link java.util.Comparator}.
+ *  @{link java.util.Comparator} object.
+ *
+ * @author Felix Rabe
+ * @version 20111129
  */
 public abstract class Sort<T> {
     protected java.util.Comparator<T> comparator;

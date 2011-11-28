@@ -1,8 +1,9 @@
 import java.util.*;
 
-/** Program that sorts an arbitrary array using the bubble sort algorithm.
+/** Sort an arbitrary array using the bubble sort algorithm.
+ *
  * @author Felix Rabe
- * @version 20111024
+ * @version 20111129
  */
 public class BubbleSort<T> extends Sort<T> {
     public BubbleSort(java.util.Comparator<T> comparator) {

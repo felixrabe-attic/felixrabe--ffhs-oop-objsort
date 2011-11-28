@@ -3,7 +3,7 @@
  * Note: this comparator imposes orderings that are inconsistent with equals.
  *
  * @author Felix Rabe
- * @version 20111128
+ * @version 20111129
  */
 public class StudentNumberComparator implements java.util.Comparator<Student> {
     public int compare(Student a, Student b) {
