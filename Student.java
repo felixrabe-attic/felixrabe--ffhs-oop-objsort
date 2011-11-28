@@ -6,7 +6,7 @@ public class Student {
     /* Data fields of the student: */
     private String firstName;
     private String lastName;
-    private String number;
+    private int number;
     private int age;
     private double gradePointAverage;
     
@@ -18,8 +18,8 @@ public class Student {
     public String getLastName() { return lastName; }
     public void setLastName(String lastName) { this.lastName = lastName; }
     
-    public String getNumber() { return number; }
-    public void setNumber(String number) { this.number = number; }
+    public int getNumber() { return number; }
+    public void setNumber(int number) { this.number = number; }
     
     public int getAge() { return age; }
     public void setAge(int age) { this.age = age; }
@@ -44,7 +44,7 @@ public class Student {
     public static class Builder {
         private final Student student;
         
-        public Builder(String number) {
+        public Builder(int number) {
             student = new Student();
             student.setNumber(number);
         }
