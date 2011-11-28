@@ -30,6 +30,15 @@ public class Student {
         this.gradePointAverage = gradePointAverage;
     }
     
+    /** Return a #{java.lang.String} representation of this student. */
+    public String toString() {
+        return  "First:  " + getFirstName() + "\n" +
+                "Last:   " + getLastName() + "\n" +
+                "Number: " + getNumber() + "\n" +
+                "Age:    " + getAge() + "\n" +
+                "GPA:    " + getGradePointAverage() + "\n";
+    }
+    
     /** Hidden constructor. Instead use the {@link Student.Builder} class below. */
     private Student() { }
     
