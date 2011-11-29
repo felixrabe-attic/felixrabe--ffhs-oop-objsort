@@ -1,6 +1,6 @@
 /** Main program that demonstrates sorting a list of students.
  *
- * Run without arguments, it uses the example data provided by
+ * To be run without arguments.  It uses the example data provided by
  * {@link StudentExampleData#build}.
  *
  * @author Felix Rabe
@@ -10,6 +10,7 @@ public class Main {
     /** Main program. */
     public static void main(String[] args) {
         Student[] students = StudentExampleData.build();
+        
         print("Unsorted", students);
 
         sortInPlaceUsing(students, new java.util.Comparator<Student>() {
@@ -39,6 +40,11 @@ public class Main {
         print("Sorted by GPA", students);
     }
     
+    /** Print all students with the given caption.
+     *
+     * @param caption the caption that is printed above the list of the students
+     * @param students the array of students to print
+     */
     private static void print(String caption, Student[] students) {
         System.out.println(caption + ":");
         for (Student s: students) {
@@ -50,9 +56,10 @@ public class Main {
     /** Sort the specified array in-place.
      *
      * Uses the bubble sort algorithm and the specified
-     * {@link java.util.Comparator} object.
+     * {@link java.util.Comparator} strategy.
      *
      * @param array the array to sort
+     * @param comparator the strategy by which to sort the given array
      */
     private static void sortInPlaceUsing(Student[] array,
                                          java.util.Comparator<Student> comparator) {

@@ -7,7 +7,7 @@ public class StudentExampleData {
     /** No use for instantiation for this class. */
     private StudentExampleData() { }
 
-    /** Create example data. */
+    /** Build example data. */
     public static Student[] build() {
         return new Student[] {
             new Student.Builder(4)

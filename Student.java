@@ -43,8 +43,8 @@ public class Student {
     /** Builder to be used to construct {@link Student} objects.
      *
      * Do not use an instance of this class as an Abstract Factory, because its
-     * constructor creates a student object that is populated by the builder
-     * methods, and the build() method will just return this student object.
+     * constructor creates a {@link Student} object that is populated by the
+     * builder methods, and the build() method will just return that student object.
      * (See Joshua Bloch, Effective Java, 2nd ed., item 2, p. 15.)
      *
      * @see StudentExampleData
