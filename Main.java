@@ -27,6 +27,16 @@ public class Main {
             }
         });
         print("Sorted by last name", students);
+
+        sortInPlaceUsing(students, new java.util.Comparator<Student>() {
+            /** Sort students by GPA. */
+            public int compare(Student a, Student b) {
+                double aa = a.getGradePointAverage();
+                double bb = b.getGradePointAverage();
+                return aa == bb ? 0 : aa < bb ? -1 : 1;
+            }
+        });
+        print("Sorted by GPA", students);
     }
     
     private static void print(String caption, Student[] students) {
