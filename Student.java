@@ -33,7 +33,7 @@ public class Student {
         this.gradePointAverage = gradePointAverage;
     }
     
-    /** Return a #{java.lang.String} representation of this student. */
+    /** Return a {@link java.lang.String} representation of this student. */
     public String toString() {
         return "Student #" + getNumber() + ": " +
             getFirstName() + " " + getLastName() + " " +

@@ -4,7 +4,7 @@
  * @version 20111129
  */
 public class StudentExampleData {
-    /** No use for instantiation. */
+    /** No use for instantiation for this class. */
     private StudentExampleData() { }
 
     /** Create example data. */

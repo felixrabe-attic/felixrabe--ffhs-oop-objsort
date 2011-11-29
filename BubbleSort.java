@@ -1,6 +1,6 @@
 import java.util.*;
 
-/** Sort an arbitrary array using the bubble sort algorithm.
+/** Sort an array using the bubble sort algorithm.
  *
  * @author Felix Rabe
  * @version 20111129
@@ -11,7 +11,7 @@ public class BubbleSort<T> extends Sort<T> {
     }
 
     /** Sort the specified array in-place.  Uses the bubble sort algorithm.
-     * @param array - the array to sort
+     * @param array the array to sort
      */
     public void sortInPlace(T[] array) {
         boolean hadToSwap;
@@ -28,9 +28,9 @@ public class BubbleSort<T> extends Sort<T> {
     }
 
     /** Swap two elements in the given array.
-     * @param array - the array in which to swap the elements
-     * @param first - the index of the first element to swap
-     * @param second - the index of the second element to swap
+     * @param array the array in which to swap the elements
+     * @param first the index of the first element to swap
+     * @param second the index of the second element to swap
      */
     private void swap(T[] array, int first, int second) {
         T tmp = array[first];
