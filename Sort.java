@@ -11,6 +11,17 @@ public abstract class Sort<T> {
     public void setComparator(java.util.Comparator<T> comparator) {
         this.comparator = comparator;
     }
+    
+    /** Shortcut method to set the comparator, returning this.
+     *
+     * Useful for chaining with {@link #sort}.
+     *
+     * @return this
+     */
+    public Sort<T> cmp(java.util.Comparator<T> comparator) {
+        setComparator(comparator);
+        return this;
+    }
 
     /** Sort the inputs, not modifying the input array.
      *

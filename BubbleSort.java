@@ -6,10 +6,6 @@ import java.util.*;
  * @version 20111129
  */
 public class BubbleSort<T> extends Sort<T> {
-    public BubbleSort(java.util.Comparator<T> comparator) {
-        super(comparator);
-    }
-
     /** Sort the specified array in-place.  Uses the bubble sort algorithm.
      * @param array the array to sort
      */
