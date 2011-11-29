@@ -1,4 +1,4 @@
-/** Main program.
+/** Main program that demonstrates sorting a list of students.
  *
  * Run without arguments, it uses the example data provided by
  * {@link StudentExampleData#build}.
